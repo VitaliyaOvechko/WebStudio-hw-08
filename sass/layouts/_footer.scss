@@ -6,20 +6,31 @@
 
 .footer-flex {
     display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
     align-items: baseline;
-    justify-content: flex-start;
+
+    // align-items: baseline;
+    // justify-content: flex-start;
 }
 
 .footer-content {
     display: flex;
     flex-direction: column;
-    margin-right: 70px;
+    align-items: center;
+    // margin-right: 70px;
+
+    @include tablet {
+
+    }
 }
 
 
 .footer-address {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 
     font-style: normal;
@@ -46,6 +57,8 @@
 }
 
 .footer-soc-title {
+    text-align: center;
+
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 700;
@@ -58,10 +71,15 @@
 }
 
 .footer-form {
-    margin-left: 93px;
+    // margin-left: 93px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-form-title {
+    text-align: center;
     display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
@@ -77,7 +95,9 @@
 
 .footer-form-wrap {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer-button {
@@ -103,7 +123,8 @@
 }
 
 .footer-input {
-    width: 358px;
+    width: 450px;
+    // width: 358px;
     height: 50px;
     padding-left: 16px;
 
@@ -122,8 +143,6 @@
             color: rgba(255, 255, 255, 0.6);
         }
 }
-
-
 
 .footer-button-icon {
     align-self: flex-end;

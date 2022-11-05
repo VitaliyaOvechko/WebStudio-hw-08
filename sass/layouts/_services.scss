@@ -1,6 +1,10 @@
 .services {
     padding-top: 0;
     background-color: var(--background-main);
+
+    @media screen and (max-width:1199px){
+    display: none;
+    }
 }
 
 .services__title {
