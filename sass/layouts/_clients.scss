@@ -15,18 +15,31 @@
 
 .clients__list {
     display: flex;
-    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    height: 92px;
+
+    width: calc((100%-30px) / 2);
+
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+    }
+
+    @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .clients__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
 
-    width: 170px;
-    height: 92px;
+    width: 100%;
+
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
