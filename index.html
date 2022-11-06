@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="container navigation">
           <a href="./index.html" class="logo link"
@@ -54,8 +54,67 @@
             </a>
           </li>
         </ul>
+        <div>
+          <button type="button" class="menu-button" data-menu-open>
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon_open_menu"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-    </header> -->
+      <div class="mobile-menu-wrap is-hidden" data-menu>
+        <div class="container-mobile">
+          <div class="container-mobile-top">
+            <button type="button" class="close-menu-button" data-menu-close>
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon_close_menu"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""> Студія </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="./portfolio.html">
+                  Портфоліо
+                </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href=""> Контакти </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts-tel">
+                <a class="mobile-tel-link link" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-contacts-mail">
+                <a class="mobile-mail-link link" href="info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-soc-list list">
+              <li class="mobile-soc-items">
+                <a class="mobile-soc-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-soc-items">
+                <a class="mobile-soc-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-soc-items">
+                <a class="mobile-soc-link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-soc-items">
+                <a class="mobile-soc-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
@@ -176,25 +235,31 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/prod.designer.jpg 1x
-                          ./images/prod.designer_2x.jpg 2x"
+                  srcset="
+                    ./images/prod.designer.jpg    1x,
+                    ./images/prod.designer_2x.jpg 2x
+                  "
                   media="(min-width:1200px)"
                 />
                 <source
-                  srcset="./images/prod.designer_tablet.jpg 1x
-                          ./images/prod.designer_tablet_2x.jpg 2x"
+                  srcset="
+                    ./images/prod.designer_tablet.jpg    1x,
+                    ./images/prod.designer_tablet_2x.jpg 2x
+                  "
                   media="(min-width:768px)"
                 />
                 <source
-                  srcset="./images/prod.designer_mobile.jpg 1x
-                          ./images/prod.designer_mobile_2x.jpg 2x"
+                  srcset="
+                    ./images/prod.designer_mobile.jpg    1x,
+                    ./images/prod.designer_mobile_2x.jpg 2x
+                  "
                   media="(max-width:768px)"
                 />
+                <img
+                  src="./images/prod.designer.jpg"
+                  alt="Our Product Designer"
+                />
               </picture>
-              <img
-                src="./images/prod.designer.jpg"
-                alt="Our Product Designer"
-              />
               <div class="team__overlay">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -239,25 +304,31 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/frontend_developer.jpg 1x
-                          ./images/frontend_dev_2x.jpg 2x"
+                  srcset="
+                    ./images/frontend_developer.jpg 1x,
+                    ./images/frontend_dev_2x.jpg    2x
+                  "
                   media="(min-width:1200px)"
                 />
                 <source
-                  srcset="./images/frontend_dev_tablet.jpg 1x
-                          ./images/frontend_dev_tablet_2x.jpg 2x"
+                  srcset="
+                    ./images/frontend_dev_tablet.jpg    1x,
+                    ./images/frontend_dev_tablet_2x.jpg 2x
+                  "
                   media="(min-width:768px)"
                 />
                 <source
-                  srcset="./images/frontend_dev_mobile.jpg 1x
-                          ./images/frontend_dev_mobile_2x.jpg 2x"
+                  srcset="
+                    ./images/frontend_dev_mobile.jpg    1x,
+                    ./images/frontend_dev_mobile_2x.jpg 2x
+                  "
                   media="(max-width:768px)"
                 />
+                <img
+                  src="./images/frontend_developer.jpg"
+                  alt="Our Frontend Developer"
+                />
               </picture>
-              <img
-                src="./images/frontend_developer.jpg"
-                alt="Our Frontend Developer"
-              />
               <div class="team__overlay">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -302,22 +373,28 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/marketing.jpg 1x
-                          ./images/marketing_2x.jpg 2x"
+                  srcset="
+                    ./images/marketing.jpg    1x,
+                    ./images/marketing_2x.jpg 2x
+                  "
                   media="(min-width:1200px)"
                 />
                 <source
-                  srcset="./images/marketing_tablet.jpg 1x
-                          ./images/marketing_tablet_2x.jpg 2x"
+                  srcset="
+                    ./images/marketing_tablet.jpg    1x,
+                    ./images/marketing_tablet_2x.jpg 2x
+                  "
                   media="(min-width:768px)"
                 />
                 <source
-                  srcset="./images/marketing_mobile.jpg 1x
-                          ./images/marketing_mobile_2x.jpg 2x"
+                  srcset="
+                    ./images/marketing_mobile.jpg    1x,
+                    ./images/marketing_mobile_2x.jpg 2x
+                  "
                   media="(max-width:768px)"
                 />
+                <img src="./images/marketing.jpg" alt="Our Marketing Manager" />
               </picture>
-              <img src="./images/marketing.jpg" alt="Our Marketing Manager" />
               <div class="team__overlay">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -362,22 +439,25 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/designer.jpg 1x
-                          ./images/designer_2x.jpg 2x"
+                  srcset="./images/designer.jpg 1x, ./images/designer_2x.jpg 2x"
                   media="(min-width:1200px)"
                 />
                 <source
-                  srcset="./images/designer_tablet.jpg 1x
-                          ./images/designer_tablet_2x.jpg 2x"
+                  srcset="
+                    ./images/designer_tablet.jpg    1x,
+                    ./images/designer_tablet_2x.jpg 2x
+                  "
                   media="(min-width:768px)"
                 />
                 <source
-                  srcset="./images/designer_mobile.jpg 1x
-                          ./images/designer_mobile_2x.jpg 2x"
+                  srcset="
+                    ./images/designer_mobile.jpg    1x,
+                    ./images/designer_mobile_2x.jpg 2x
+                  "
                   media="(max-width:768px)"
                 />
+                <img src="./images/designer.jpg" alt="Our UI Designer" />
               </picture>
-              <img src="./images/designer.jpg" alt="Our UI Designer" />
               <div class="team__overlay">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -475,7 +555,8 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="footer-content">
+        <div class="footer-top">
+          <div class="footer-content">
           <a href="" class="logo link"
             >Web<span class="logo__part--light">Studio</span></a
           >
@@ -522,7 +603,9 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
+        </div>
+        <div class="footer-bottom">
+          <form class="footer-form">
           <label class="footer-form-title" for="email">
             Підпишіться на розсилку
           </label>
@@ -543,11 +626,12 @@
               </button>
             </div>
           </div>
+        </div>
         </form>
       </div>
     </footer>
 
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal-close-button">
           <svg class="" width="18" height="18">
@@ -619,8 +703,9 @@
 
         <button class="modal-button" type="submit">Відправити</button>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
