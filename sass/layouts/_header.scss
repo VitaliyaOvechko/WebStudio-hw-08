@@ -95,8 +95,12 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.14;
+    }
     letter-spacing: 0.02em;
     color: var(--second-main-color);
 
@@ -229,7 +233,7 @@
     font-size: 14px;
     
     @include mobile {
-        font-size: 24px;
+        font-size: 18px;
     }
     line-height: 1.22;
     

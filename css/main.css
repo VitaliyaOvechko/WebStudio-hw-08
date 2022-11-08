@@ -84,6 +84,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -242,11 +248,17 @@ img {
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--second-main-color);
   transition-property: color;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__header {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .contacts__header:hover, .contacts__header:focus {
   color: var(--accent-color);
@@ -374,7 +386,7 @@ img {
 }
 @media screen and (min-width: 480px) {
   .mobile-soc-link {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -417,7 +429,14 @@ img {
 }
 
 .hero__container {
-  padding: 118px 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 h1 {
@@ -435,6 +454,13 @@ h1 {
 @media screen and (min-width: 480px) {
   h1 {
     font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
   }
 }
 
@@ -456,6 +482,11 @@ h1 {
 @media screen and (min-width: 480px) {
   .hero__button {
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    padding: 10px 32px;
   }
 }
 
@@ -510,6 +541,7 @@ h1 {
 .features__text {
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -539,10 +571,7 @@ h1 {
 
 .services-list {
   display: flex;
-}
-
-.services-list__item :not(:last-child) {
-  margin-right: 30px;
+  gap: 30px;
 }
 
 .services-list__element {
@@ -579,7 +608,7 @@ h1 {
 
 .team__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -588,6 +617,7 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   .team__title {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
@@ -648,11 +678,18 @@ h1 {
 
 .clints__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .clints__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients__list {
@@ -754,7 +791,6 @@ h1 {
 }
 
 .footer-soc-title {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 700;
@@ -768,7 +804,7 @@ h1 {
 .footer-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-form-title {

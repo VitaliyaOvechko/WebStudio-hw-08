@@ -37,7 +37,12 @@
 }
 
 .hero__container {
-    padding: 118px 60px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 h1 {
@@ -45,7 +50,6 @@ h1 {
     margin: 0 auto;
     margin-bottom: 30px;
     max-width: 360px;
-    // max-width: 696px;
 
     font-weight: 900;
     font-size: 16px;
@@ -53,8 +57,11 @@ h1 {
     @include mobile {
     font-size: 26px;
     }
-    // font-size: 44px;
-    // line-height: 1.36;
+    @include desktop {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
@@ -63,7 +70,6 @@ h1 {
 .hero__button {
     border-radius: 4px;
     padding: 10px 24px;
-    // padding: 10px 32px;
     border: 1px solid transparent;
 
     font-family: inherit;
@@ -81,4 +87,8 @@ h1 {
     color: var(--white);
     background-color: var(--background-accent);
     cursor: pointer;
+
+    @include desktop {
+        padding: 10px 32px;
+    }
 }

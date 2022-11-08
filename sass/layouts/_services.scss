@@ -22,12 +22,7 @@
 
 .services-list {
     display: flex;
-}
-
-.services-list__item {
-    :not(:last-child) {
-        margin-right: 30px;
-    }
+    gap: 30px;
 }
 
 .services-list__element {
